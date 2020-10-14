@@ -1,0 +1,4 @@
+{
+  "UiPath.GSuite.Activities.GenericGSuite.ContinueOnError": "False",
+  "UiPath.GSuite.Activities.GSuiteScope.TimeoutMS": "60000"
+}
