@@ -2,7 +2,7 @@
 
 This repository contains robot process automation workflow for automating the manual task of downloading the PDF invoices from a certain group of emails and then storing the important information into  a more strucured format. It takes a lot of time and attention to complete the whole process but automating this would take only seconds to complete with less prone to error.
 
-![alt-txt](https://github.com/rajatsharma369007/invoice-scraping/doc/images/image1.jpg)
+![alt-txt](https://github.com/rajatsharma369007/invoice-scraping/blob/main/doc/images/image1.jpg)
 
 ### Automation contains 7 key steps
 
@@ -24,19 +24,19 @@ This repository contains robot process automation workflow for automating the ma
 ### Screenshots
 
 ##### Received Emails with PDF invoices
-![alt-txt](https://github.com/rajatsharma369007/invoice-scraping/doc/images/image4.jpg)
+<img src="https://github.com/rajatsharma369007/invoice-scraping/blob/main/doc/images/image4.jpg" width="500px"/>
 
 ##### A sample of PDF invoice 
-![alt-txt](https://github.com/rajatsharma369007/invoice-scraping/doc/images/image2.jpg)
+<img src="https://github.com/rajatsharma369007/invoice-scraping/blob/main/doc/images/image2.jpg" width="500px"/>
 
 ##### A sample of structured invoice
-![alt-txt](https://github.com/rajatsharma369007/invoice-scraping/doc/images/image3.jpg)
+<img src="https://github.com/rajatsharma369007/invoice-scraping/blob/main/doc/images/image3.jpg" width="500px"/>
 
 ##### Orchestrator Queue
-![alt-txt](https://github.com/rajatsharma369007/invoice-scraping/doc/images/image6.png)
+<img src="https://github.com/rajatsharma369007/invoice-scraping/blob/main/doc/images/image6.png" width="500px"/>
     
 ##### Sent Emails with attached excel
-![alt-txt](https://github.com/rajatsharma369007/invoice-scraping/doc/images/image5.png)
+<img src="https://github.com/rajatsharma369007/invoice-scraping/blob/main/doc/images/image5.png" width="500px"/>
 
 
 ### License
