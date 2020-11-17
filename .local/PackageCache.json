@@ -2,6 +2,38 @@
   "Packages": [
     {
       "Package": {
+        "Id": "BalaReva.EasyDataTable.Activities",
+        "Version": "3.0.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\rajat\\.nuget\\packages\\balareva.easydatatable.activities/3.0.0\\lib/BalaReva.EasyDataTable.Design.dll",
+        "C:\\Users\\rajat\\.nuget\\packages\\balareva.easydatatable.activities/3.0.0\\lib/BalaReva.EasyDataTable.dll"
+      ]
+    },
+    {
+      "Package": {
+        "Id": "EpsilonAI.PDFReader.Activities",
+        "Version": "1.0.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\rajat\\.nuget\\packages\\epsilonai.pdfreader.activities/1.0.0\\lib/net461/EpsilonAI.PDFReader.Activities.dll",
+        "C:\\Users\\rajat\\.nuget\\packages\\epsilonai.pdfreader.activities/1.0.0\\lib/net461/PDFReader.dll",
+        "C:\\Users\\rajat\\.nuget\\packages\\magick.net-q16-anycpu/7.14.5\\lib/net40/Magick.NET-Q16-AnyCPU.dll",
+        "C:\\Users\\rajat\\.nuget\\packages\\newtonsoft.json/12.0.3\\lib/net45/Newtonsoft.Json.dll"
+      ]
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Activities.Extensions",
+        "Version": "2.0.6.9"
+      },
+      "Assemblies": [
+        "C:\\Users\\rajat\\.nuget\\packages\\microsoft.activities.extensions/2.0.6.9\\lib/Net45/Microsoft.Activities.Extensions.Design.dll",
+        "C:\\Users\\rajat\\.nuget\\packages\\microsoft.activities.extensions/2.0.6.9\\lib/Net45/Microsoft.Activities.Extensions.dll"
+      ]
+    },
+    {
+      "Package": {
         "Id": "UiPath.Excel.Activities",
         "Version": "2.7.2"
       },
@@ -64,6 +96,20 @@
         "C:\\Users\\rajat\\.nuget\\packages\\uipath.mail.activities/1.7.2\\lib/net461/UiPath.Mail.Activities.Design.dll",
         "C:\\Users\\rajat\\.nuget\\packages\\uipath.mail.activities/1.7.2\\lib/net461/UiPath.Mail.Activities.dll",
         "C:\\Users\\rajat\\.nuget\\packages\\uipath.mail.activities/1.7.2\\lib/net461/UiPath.Mail.dll"
+      ]
+    },
+    {
+      "Package": {
+        "Id": "UiPath.PDF.Activities",
+        "Version": "3.2.2"
+      },
+      "Assemblies": [
+        "C:\\Users\\rajat\\.nuget\\packages\\bitmiracle.docotic.pdf/5.10.9957\\lib/net40/BitMiracle.Docotic.Pdf.dll",
+        "C:\\Users\\rajat\\.nuget\\packages\\system.valuetuple/4.5.0\\lib/net461/System.ValueTuple.dll",
+        "C:\\Users\\rajat\\.nuget\\packages\\uipath.ocr.contracts/2.6.0\\lib/net461/UiPath.OCR.Contracts.dll",
+        "C:\\Users\\rajat\\.nuget\\packages\\uipath.pdf.activities/3.2.2\\lib/net461/UiPath.PDF.Activities.Design.dll",
+        "C:\\Users\\rajat\\.nuget\\packages\\uipath.pdf.activities/3.2.2\\lib/net461/UiPath.PDF.Activities.dll",
+        "C:\\Users\\rajat\\.nuget\\packages\\uipath.pdf.activities/3.2.2\\lib/net461/UiPath.PDF.dll"
       ]
     },
     {
@@ -135,32 +181,6 @@
     },
     {
       "Package": {
-        "Id": "EpsilonAI.PDFReader.Activities",
-        "Version": "1.0.0"
-      },
-      "Assemblies": [
-        "C:\\Users\\rajat\\.nuget\\packages\\epsilonai.pdfreader.activities/1.0.0\\lib/net461/EpsilonAI.PDFReader.Activities.dll",
-        "C:\\Users\\rajat\\.nuget\\packages\\epsilonai.pdfreader.activities/1.0.0\\lib/net461/PDFReader.dll",
-        "C:\\Users\\rajat\\.nuget\\packages\\magick.net-q16-anycpu/7.14.5\\lib/net40/Magick.NET-Q16-AnyCPU.dll",
-        "C:\\Users\\rajat\\.nuget\\packages\\newtonsoft.json/12.0.3\\lib/net45/Newtonsoft.Json.dll"
-      ]
-    },
-    {
-      "Package": {
-        "Id": "UiPath.PDF.Activities",
-        "Version": "3.2.2"
-      },
-      "Assemblies": [
-        "C:\\Users\\rajat\\.nuget\\packages\\bitmiracle.docotic.pdf/5.10.9957\\lib/net40/BitMiracle.Docotic.Pdf.dll",
-        "C:\\Users\\rajat\\.nuget\\packages\\system.valuetuple/4.5.0\\lib/net461/System.ValueTuple.dll",
-        "C:\\Users\\rajat\\.nuget\\packages\\uipath.ocr.contracts/2.6.0\\lib/net461/UiPath.OCR.Contracts.dll",
-        "C:\\Users\\rajat\\.nuget\\packages\\uipath.pdf.activities/3.2.2\\lib/net461/UiPath.PDF.Activities.Design.dll",
-        "C:\\Users\\rajat\\.nuget\\packages\\uipath.pdf.activities/3.2.2\\lib/net461/UiPath.PDF.Activities.dll",
-        "C:\\Users\\rajat\\.nuget\\packages\\uipath.pdf.activities/3.2.2\\lib/net461/UiPath.PDF.dll"
-      ]
-    },
-    {
-      "Package": {
         "Id": "UiPathTeam.ActivitiesReadSavedEmailToDictionary",
         "Version": "1.0.0"
       },
@@ -168,26 +188,6 @@
         "C:\\Users\\rajat\\.nuget\\packages\\uipathteam.activitiesreadsavedemailtodictionary/1.0.0\\lib/Interop.ADODB.dll",
         "C:\\Users\\rajat\\.nuget\\packages\\uipathteam.activitiesreadsavedemailtodictionary/1.0.0\\lib/Interop.CDO.dll",
         "C:\\Users\\rajat\\.nuget\\packages\\uipathteam.activitiesreadsavedemailtodictionary/1.0.0\\lib/MailToDictionary.dll"
-      ]
-    },
-    {
-      "Package": {
-        "Id": "BalaReva.EasyDataTable.Activities",
-        "Version": "3.0.0"
-      },
-      "Assemblies": [
-        "C:\\Users\\rajat\\.nuget\\packages\\balareva.easydatatable.activities/3.0.0\\lib/BalaReva.EasyDataTable.Design.dll",
-        "C:\\Users\\rajat\\.nuget\\packages\\balareva.easydatatable.activities/3.0.0\\lib/BalaReva.EasyDataTable.dll"
-      ]
-    },
-    {
-      "Package": {
-        "Id": "Microsoft.Activities.Extensions",
-        "Version": "2.0.6.9"
-      },
-      "Assemblies": [
-        "C:\\Users\\rajat\\.nuget\\packages\\microsoft.activities.extensions/2.0.6.9\\lib/Net45/Microsoft.Activities.Extensions.Design.dll",
-        "C:\\Users\\rajat\\.nuget\\packages\\microsoft.activities.extensions/2.0.6.9\\lib/Net45/Microsoft.Activities.Extensions.dll"
       ]
     }
   ],

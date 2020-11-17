@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Read_Invoice" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="574,2438" sap2010:WorkflowViewState.IdRef="Read_Invoice_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:si="clr-namespace:System.IO;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Read_Invoice" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="574,2486" sap2010:WorkflowViewState.IdRef="Read_Invoice_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:si="clr-namespace:System.IO;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="25">
       <x:String>System.Activities</x:String>
@@ -52,7 +52,7 @@
       <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="This process helps in:&#xA;&#xA;1) Automate the reading of the pdf file.&#xA;2) Invoke Scrap_PDF_Data workflow&#xA;3) Automate the entering of the order information into an excel spreadsheet&#xA;4) Uploads the order information to orchestrator queue&#xA;5) Automate sending an email with an Excel workbook as an attachment&#xA;&#xA;Pre-condition:&#xA;- PDF invoices extracted from email and saved to &quot;Invoice&quot; folder&#xA;&#xA;Post-action:&#xA;- Invokes Scrap_PDF_Data&#xA;- Data from Data Table exports successfully to Excel file&#xA;- Invokes Send_Excel_Mail" DisplayName="Invoice Scraping, Orchestrator, Email Automation" sap:VirtualizedContainerService.HintSize="554,2378" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="This process helps in:&#xA;&#xA;1) Automate the reading of the pdf file.&#xA;2) Invoke Scrap_PDF_Data workflow&#xA;3) Automate the entering of the order information into an excel spreadsheet&#xA;4) Uploads the order information to orchestrator queue&#xA;5) Automate sending an email with an Excel workbook as an attachment&#xA;&#xA;Pre-condition:&#xA;- PDF invoices extracted from email and saved to &quot;Invoice&quot; folder&#xA;&#xA;Post-action:&#xA;- Invokes Scrap_PDF_Data&#xA;- Data from Data Table exports successfully to Excel file&#xA;- Invokes Send_Excel_Mail" DisplayName="Invoice Scraping, Orchestrator, Email Automation" sap:VirtualizedContainerService.HintSize="554,2426" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="C:\Users\rajat\Documents\rpa_exercise\Invoice Scrapping\Invoice" Name="invoicePath" />
       <Variable x:TypeArguments="s:String[]" Name="pdfFiles" />
@@ -63,14 +63,14 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch sap2010:Annotation.AnnotationText="Handles the exception of not having any files in the folder or provision of wrong path" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="512,371" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch sap2010:Annotation.AnnotationText="Handles the exception of not having any files in the folder or provision of wrong path" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="512,380" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Assign sap2010:Annotation.AnnotationText="Fetches all the pdf files stored in the INVOICE folder" sap:VirtualizedContainerService.HintSize="262,102" sap2010:WorkflowViewState.IdRef="Assign_1">
+        <Assign sap2010:Annotation.AnnotationText="Fetches all the pdf files stored in the INVOICE folder" sap:VirtualizedContainerService.HintSize="262,104" sap2010:WorkflowViewState.IdRef="Assign_1">
           <Assign.To>
             <OutArgument x:TypeArguments="s:String[]">[pdfFiles]</OutArgument>
           </Assign.To>
@@ -85,7 +85,7 @@
         </Assign>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="si:DirectoryNotFoundException" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_4">
+        <Catch x:TypeArguments="si:DirectoryNotFoundException" sap:VirtualizedContainerService.HintSize="404,22" sap2010:WorkflowViewState.IdRef="Catch`1_4">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -96,18 +96,18 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="si:DirectoryNotFoundException" Name="exception" />
             </ActivityAction.Argument>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Error" Message="[&quot;Path is incorrect or Folder not present&quot;]" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,93" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Error" Message="[&quot;Path is incorrect or Folder not present&quot;]" />
           </ActivityAction>
         </Catch>
       </TryCatch.Catches>
     </TryCatch>
-    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Interating through each pdf invoice" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="512,1638" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[pdfFiles]">
+    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Interating through each pdf invoice" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="512,1663" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[pdfFiles]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="x:String">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:String" Name="item" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Invokes Scrap_PDF_Data and Send_Excel_Mail workflow" sap:VirtualizedContainerService.HintSize="476,1473" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Invokes Scrap_PDF_Data and Send_Excel_Mail workflow" sap:VirtualizedContainerService.HintSize="476,1497" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="invoiceNumber" />
               <Variable x:TypeArguments="x:String" Name="customerName" />
@@ -124,7 +124,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Assign sap2010:Annotation.AnnotationText="Derive the filename from the pdf file path using regex" DisplayName="get filename from the absolute path" sap:VirtualizedContainerService.HintSize="434,102" sap2010:WorkflowViewState.IdRef="Assign_2">
+            <Assign sap2010:Annotation.AnnotationText="Derive the filename from the pdf file path using regex" DisplayName="get filename from the absolute path" sap:VirtualizedContainerService.HintSize="434,104" sap2010:WorkflowViewState.IdRef="Assign_2">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[fileName]</OutArgument>
               </Assign.To>
@@ -137,7 +137,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </Assign>
-            <ui:MultipleAssign sap2010:Annotation.AnnotationText="Derive&#xA;* Customer Name&#xA;* Invoice Number&#xA;&#xA;from the filename" DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="434,216" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+            <ui:MultipleAssign sap2010:Annotation.AnnotationText="Derive&#xA;* Customer Name&#xA;* Invoice Number&#xA;&#xA;from the filename" DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="434,221" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
               <ui:MultipleAssign.AssignOperations>
                 <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
@@ -164,7 +164,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:MultipleAssign>
-            <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="This workflow fetches the OrderInformation Data from the invoice:&#xA;&#xA;* ItemNo&#xA;* Description&#xA;* Quantity&#xA;* Price&#xA;* SubTotal&#xA;* GST&#xA;* Total&#xA;&#xA;and returns a Data Table" DisplayName="Invoke Scrap_PDF_Data Workflow File" sap:VirtualizedContainerService.HintSize="434,279" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Scrap_PDF_Data.xaml">
+            <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="This workflow fetches the OrderInformation Data from the invoice:&#xA;&#xA;* ItemNo&#xA;* Description&#xA;* Quantity&#xA;* Price&#xA;* SubTotal&#xA;* GST&#xA;* Total&#xA;&#xA;and returns a Data Table" DisplayName="Invoke Scrap_PDF_Data Workflow File" sap:VirtualizedContainerService.HintSize="434,291" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="workflow\Scrap_PDF_Data.xaml">
               <ui:InvokeWorkflowFile.Arguments>
                 <InArgument x:TypeArguments="x:String" x:Key="in_pdfLocationPath">[item.ToString]</InArgument>
                 <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_pdfInfoTable">[finalExcel]</OutArgument>
@@ -210,7 +210,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:ExcelApplicationScope>
-            <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="This workflow mails the generated excel file to my outlook account which subject line:&#xA;&#xA;&quot;CustomerName_InvoiceNumber details uploaded to queue&quot;" DisplayName="Invoke Send_Excel_Mail Workflow File" sap:VirtualizedContainerService.HintSize="434,174" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Send_Excel_Mail.xaml">
+            <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="This workflow mails the generated excel file to my outlook account which subject line:&#xA;&#xA;&quot;CustomerName_InvoiceNumber details uploaded to queue&quot;" DisplayName="Invoke Send_Excel_Mail Workflow File" sap:VirtualizedContainerService.HintSize="434,179" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="workflow\Send_Excel_Mail.xaml">
               <ui:InvokeWorkflowFile.Arguments>
                 <InArgument x:TypeArguments="x:String" x:Key="in_subjectLine">[string.Format("Course 2 Automation: " + customerName + "_" + invoiceNumber + " details uploaded to queue")]</InArgument>
                 <InArgument x:TypeArguments="x:String" x:Key="in_excelPath">[excelFileName]</InArgument>

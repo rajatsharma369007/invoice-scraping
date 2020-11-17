@@ -2583,9 +2583,9 @@
     "restore": {
       "projectUniqueName": "Invoice Scrapping",
       "projectName": "Invoice Scrapping",
-      "projectPath": "C:\\Users\\rajat\\Documents\\rpa_exercise\\Invoice Scrapping\\.local",
+      "projectPath": "C:\\Users\\rajat\\Documents\\invoice-scraping\\.local",
       "packagesPath": "C:\\Users\\rajat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rajat\\Documents\\rpa_exercise\\Invoice Scrapping\\.local"
+      "outputPath": "C:\\Users\\rajat\\Documents\\invoice-scraping\\.local"
     },
     "frameworks": {
       "net461": {

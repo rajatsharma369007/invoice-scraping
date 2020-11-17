@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>823,4687</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>823,4794</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>testing_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="23">
@@ -57,7 +57,7 @@
       <AssemblyReference>System.ServiceModel</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="This process fetches the OrderInformation Data from the invoice:&#xA;&#xA;* Invoice Number&#xD;&#xA;* Invoice Date &#xD;&#xA;* ItemNo&#xA;* Description&#xA;* Quantity&#xA;* Price&#xA;* SubTotal&#xA;* GST&#xA;* Total&#xA;&#xA;Pre-Condition: &#xA;- None&#xA;&#xA;Post-Action: &#xA;- Successful extraction of order information from PDF to a Data Table&#xA;- Invokes Orchestrator_Queue workflow file" DisplayName="Scrap PDF data " sap:VirtualizedContainerService.HintSize="803,4587" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="This process fetches the OrderInformation Data from the invoice:&#xA;&#xA;* Invoice Number&#xA;* Invoice Date &#xA;* ItemNo&#xA;* Description&#xA;* Quantity&#xA;* Price&#xA;* SubTotal&#xA;* GST&#xA;* Total&#xA;&#xA;Pre-Condition: &#xA;- None&#xA;&#xA;Post-Action: &#xA;- Successful extraction of order information from PDF to a Data Table&#xA;- Invokes Orchestrator_Queue workflow file" DisplayName="Scrap PDF data " sap:VirtualizedContainerService.HintSize="803,4734" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="pdfContent" />
       <Variable x:TypeArguments="s:String[]" Name="pdfContentArray" />
@@ -78,14 +78,14 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch sap2010:Annotation.AnnotationText="Handles the exception of not having any files in the folder or provision of wrong path" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="761,232" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch sap2010:Annotation.AnnotationText="Handles the exception of not having any files in the folder or provision of wrong path" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="761,379" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <ui:ReadPDFText PreserveFormatting="{x:Null}" sap2010:Annotation.AnnotationText="Pulls the whole data present in the PDF invoice in the form of text" DisplayName="Read PDF file" FileName="[in_pdfLocationPath]" sap:VirtualizedContainerService.HintSize="334,101" sap2010:WorkflowViewState.IdRef="ReadPDFText_1" Range="All" Text="[pdfContent]">
+        <ui:ReadPDFText PreserveFormatting="{x:Null}" sap2010:Annotation.AnnotationText="Pulls the whole data present in the PDF invoice in the form of text" DisplayName="Read PDF file" FileName="[in_pdfLocationPath]" sap:VirtualizedContainerService.HintSize="334,103" sap2010:WorkflowViewState.IdRef="ReadPDFText_1" Range="All" Text="[pdfContent]">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -94,7 +94,7 @@
         </ui:ReadPDFText>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="si:FileNotFoundException" sap:VirtualizedContainerService.HintSize="400,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="si:FileNotFoundException" sap:VirtualizedContainerService.HintSize="404,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -130,7 +130,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </Assign>
-    <ui:BuildDataTable sap2010:Annotation.AnnotationText="Initializes a data table with columns&#xD;&#xA;* ItemNo&#xA;* Description&#xA;* Quantity&#xA;* Price&#xA;* Total" DataTable="[temporaryTable]" DisplayName="Table for storing temporary data" sap:VirtualizedContainerService.HintSize="761,167" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;ItemNo&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Description&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Quantity&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Price&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Total&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
+    <ui:BuildDataTable sap2010:Annotation.AnnotationText="Initializes a data table with columns&#xA;* ItemNo&#xA;* Description&#xA;* Quantity&#xA;* Price&#xA;* Total" DataTable="[temporaryTable]" DisplayName="Table for storing temporary data" sap:VirtualizedContainerService.HintSize="761,167" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;ItemNo&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Description&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Quantity&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Price&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Total&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -364,7 +364,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:MultipleAssign>
-    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="This workflow helps in uploading the Order Information to the Orchestrator Queue" DisplayName="Invoke Orchestrator_Queue Workflow File" sap:VirtualizedContainerService.HintSize="761,131" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Orchestrator_Queue.xaml">
+    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="This workflow helps in uploading the Order Information to the Orchestrator Queue" DisplayName="Invoke Orchestrator_Queue Workflow File" sap:VirtualizedContainerService.HintSize="761,131" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="workflow\Orchestrator_Queue.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="x:String" x:Key="in_SubTotal">[subTotal]</InArgument>
         <InArgument x:TypeArguments="x:String" x:Key="in_GST">[gst]</InArgument>
